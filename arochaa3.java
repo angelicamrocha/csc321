@@ -2,8 +2,10 @@
 //lab 3
 import java.util.Scanner;
 
-public class arocha3 {
-    public static void main(String[] args) {
+public class arocha3
+{
+    public static void main(String[] args) 
+    {
         int x = 0;
         double y = 0.0;
         char c = 'v';
@@ -11,17 +13,21 @@ public class arocha3 {
 
         Scanner number = new Scanner(System.in);
 
-        do {
+        do 
+	{
             System.out.println("Enter a number between 1-5 inclusive:");
             x = number.nextInt();
 
-            if (x < 1 || x > 5) {
+            if (x < 1 || x > 5) 
+	    {
                 System.out.println("You have entered an incorrect number.");
             }
-        } while (x < 1 || x > 5);
+        }
+       	while (x < 1 || x > 5);
 
         String prize = "";
-        switch (x) {
+        switch (x) 
+	{
             case 1:
                 prize = "a piano";
                 break;
@@ -42,7 +48,8 @@ public class arocha3 {
                 break;
         }
 
-        for (int i = 0; i < x; i++) {
+        for (int i = 0; i < x; i++) 
+	{
             System.out.println("You have won " + prize + "!");
         }
 
